@@ -9,13 +9,13 @@
   left: 0;
   opacity: 1;
   background: rgba(0, 0, 0, 1.0);
-  transition: all 0.33s ease-out 1s;         /* 0.33s is transision (hiding) time, 1s is a delay for the bar to hide again after no longer hovering it */
+  transition: all 0.33s ease-out 1s;         /* 0.33s is transition (hiding) time, 1s is a delay for the bar to hide again after no longer hovering it */
   -webkit-transition: all 0.33s ease-out 1s; /* as above */
-  pointer-events: none; /* ,akes the element ignore mouse events */
+  pointer-events: none; /* makes the element ignore mouse events */
 }
 
 #navigator-toolbox:hover:after {
-  transition: all 0.33s ease-out; /* 0.33s is transision (reappearing) time */
+  transition: all 0.33s ease-out; /* 0.33s is transition (reappearing) time */
   -webkit-transition: all 0.33s ease-out; /* as above */
   background: rgba(0, 0, 0, 0.0);
 }
