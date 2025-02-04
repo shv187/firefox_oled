@@ -1,0 +1,32 @@
+/* userChrome.css */
+
+#navigator-toolbox:after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background: rgba(0, 0, 0, 1.0);
+  transition: all 0.33s ease-out 1s;         /* 0.33s is transision (hiding) time, 1s is a delay for the bar to hide again after no longer hovering it */
+  -webkit-transition: all 0.33s ease-out 1s; /* as above */
+  pointer-events: none; /* ,akes the element ignore mouse events */
+}
+
+#navigator-toolbox:hover:after {
+  transition: all 0.33s ease-out; /* 0.33s is transision (reappearing) time */
+  -webkit-transition: all 0.33s ease-out; /* as above */
+  background: rgba(0, 0, 0, 0.0);
+}
+
+.urlbar-input-container {
+  opacity: 0.5;
+
+  transition: all 0.2s ease-out; /* 0.2s is dis/appearing time for urlbar + some icons */
+  -webkit-transition: all 0.2s ease-out; /* as above */
+}
+
+.urlbar-input-container:hover {
+  opacity: 1.0;
+}
